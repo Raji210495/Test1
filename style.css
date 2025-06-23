@@ -1,0 +1,327 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "MBCorpoATitleCondRegular";
+    src: url("https://s0.2mdn.net/creatives/assets/4521233/MBCorpoATitleCond-Regular-Web.woff2") format("woff2"),
+        url("https://s0.2mdn.net/creatives/assets/4521233/MBCorpoATitleCond-Regular-Web.woff") format("woff"),
+        url("https://s0.2mdn.net/creatives/assets/4521233/MBCorpoATitleCond-Regular-Web.ttf") format("ttf"),
+        url("https://s0.2mdn.net/creatives/assets/4521233/MBCorpoATitleCond-Regular-Web.eot") format("eot");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "MBCorpoSTextRegular";
+    src: url("https://s0.2mdn.net/creatives/assets/4521233/MBCorpoSText-Regular-Web.woff2") format("woff2"),
+        url("https://s0.2mdn.net/creatives/assets/4521233/MBCorpoSText-Regular-Web.woff") format("woff"),
+        url("https://s0.2mdn.net/creatives/assets/4521233/MBCorpoSText-Regular-Web.ttf") format("ttf"),
+        url("https://s0.2mdn.net/creatives/assets/4521233/MBCorpoSText-Regular-Web.eot") format("eot");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "MBCorpoSTextBold";
+    src: url("https://s0.2mdn.net/creatives/assets/4431188/MBCorpoSText-Bold.woff") format('woff'),
+        url("https://s0.2mdn.net/creatives/assets/4431188/MBCorpoSText-Bold.ttf") format('ttf');
+    font-weight: 500; /* A modifier selon l'URL utilisée */
+}
+
+@font-face {
+    font-family: "MBCorpoATextCondRegular";
+    src: url("https://s0.2mdn.net/creatives/assets/4431188/MBCorpoATextCond-Regular.woff") format('woff'),
+        url("https://s0.2mdn.net/creatives/assets/4431188/MBCorpoATextCond-Regular.ttf") format('ttf');
+    font-weight: 500; /* A modifier selon l'URL utilisée */
+}
+
+
+html {
+    background: #fff;
+    color: #000;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+img {
+    border: 0;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+    background-repeat: no-repeat;
+    position: relative;
+    user-select: none;
+}
+
+*:before,
+*:after {
+    cursor: inherit;
+    box-sizing: inherit;
+    background-repeat: no-repeat;
+    position: relative;
+    user-select: none;
+}
+html {
+    background: transparent;
+}
+
+body {
+    width: 300px;
+    height: 250px;
+}
+
+* {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+    -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+    -moz-tap-highlight-color: transparent;
+    text-decoration: none;
+}
+
+#ad {
+    overflow: hidden;
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    cursor: pointer;
+}
+
+#main-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.MainExit {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#imgContainer {
+    width: 300px;
+    height: 250px;
+    overflow: hidden;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+#img_01 {
+    position: absolute;
+    left: 0px;
+    width: 300px;
+    bottom: 0px;
+    height: auto;
+}
+
+#img_02,#img_03,#img_04 {
+    opacity: 0;
+    position: absolute;
+    left: 0px;
+    width: 300px;
+    bottom: 0px;
+    /* filter: blur(4px); */
+    height: auto;
+}
+
+#img_04 {
+   
+    /* filter: blur(4px); */
+    
+}
+#left_gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 109px;
+    background: linear-gradient(black -50%,transparent 100%);
+    opacity: 1;
+}
+
+
+
+
+
+#F1txt1,#F2txt1,#F3txt1,#F4txt1{
+    position: absolute;
+    font-family: "MBCorpoATextCondRegular";
+    font-size: 24px;
+    line-height: 23px;
+    letter-spacing: 0.10em;
+    color: #fff;
+    width: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    text-align: center;
+    top: 43px;
+    left: 1px;
+    opacity: 0;
+}
+
+/* #F2txt1  {
+    position: absolute;
+    font-family: "MBCorpoSTextRegular";
+    font-size: 13px;
+    line-height: 23px;  
+    color: #fff;
+    width: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    text-align: center;
+    top: 103px;
+    left: 0px;
+    opacity: 0;
+} */
+
+
+#cta {
+    position: absolute;
+    top: 140px;
+    width: 76px;
+    height: 29px;
+    left: 111px;
+    border: 1px solid #fff;
+    overflow: hidden;
+    box-sizing: border-box;
+    border-radius: 2px;
+    opacity: 0;
+}
+
+#ctaText {
+    font-family: "MBCorpoSTextRegular";
+    font-size: 14px;
+    line-height: 30px;
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    text-align: center;
+}
+
+
+#logo {
+    position: absolute;
+    width: 32px;
+    left: 134px;
+    bottom: 27px;
+    /* z-index: 1; */
+}
+
+#mercedes_Logo {
+    position: absolute;
+    width: auto;
+    height: 10px;
+    left: 106px;
+    top: 21px;
+}
+
+
+
+
+#legal {
+    position: absolute;
+    font-family: 'MBCorpoSTextRegular';
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    font-size: 10px;
+    line-height: 110%;
+    color: #fff;
+    bottom: 2px;
+    left: 150px;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    /* align-self: center; */
+    opacity: 1;
+    visibility: visible;
+    cursor: pointer;
+}
+
+#underline {
+    position: absolute;
+    left: 0px;
+    top: 11px;
+    width: 100%;
+    height: 0.5px;
+    background-color: rgb(255, 255, 255);
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    opacity: 1;
+}
+
+
+#disclaimer_container {
+    height: 100%;
+    width: 100%;
+    display: block;
+    background: #000000;
+    padding: 41px 22px 0px 20px;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    box-sizing: border-box;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#disclaimer {
+    width: 100%;
+    height: 100%;
+    font-size: 12px;
+    line-height: 110%;
+    color: #ffffff;
+    font-family: "MBCorpoSTextRegular";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: left;
+    top: 0;
+    left: 0;
+}
+
+#close {
+    position: absolute;
+    height: auto;
+    width: 32px;
+    top: 4px;
+    right: 4px;
+    cursor: pointer;
+}
+#Disclaimerclose {
+    position: absolute;
+    height: 32px;
+    width: 32px;
+    top: 4px;
+    right: 4px;
+    z-index: 999;
+    cursor: pointer;
+}
+
